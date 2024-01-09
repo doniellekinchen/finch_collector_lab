@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Finches</title>
+</head>
+<body>
+    <h1>All Finches</h1>
+    <ul>
+        {% for finch in finches_data %}
+            <li>
+                <strong>Name:</strong> {{ finch.name }}<br>
+                <strong>Color:</strong> {{ finch.color }}<br>
+                <strong>Size:</strong> {{ finch.size }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
